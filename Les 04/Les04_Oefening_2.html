@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>les 04 - Oef 2</title>
+    <meta name="author" content="Jorden Dillen">
+</head>
+<body>
+    <form action="registreren.php" method="get">
+        <div>
+            <label for="Voorsnaam">Voornaam:
+            <input type="text" id="Voorsnaam" name="Voorsnaam" placeholder="Stijn"></label>
+        </div>
+        <div>
+            <label for="Familienaam">Familienaam:
+            <input type="text" id="Familienaam" name="Familienaam" placeholder="Lenaerts"></label>
+        </div>
+        <div>
+            <label for="gebruikersnaam">Gebruikersnaam:
+            <input type="email" id="gebruikersnaam" name="gebruikersnaam" placeholder="Mail@thomasmore.be"></label>
+        </div>
+        <div>
+            <label for="Nickname">Nickname:
+            <input type="text" id="Nickname" name="Nickname" minlength="5" maxlength="15" required></label>
+        </div>
+        <div>
+            <label for="paswoord">Paswoord:
+            <input type="password" id="paswoord" name="paswoord" required></label>
+        </div>
+        <div>
+            <label for="herhaalpaswoord">Herhaal Paswoord:
+            <input type="password" id="herhaalpaswoord" name="herhaalpaswoord" required></label>
+        </div>
+        <div>
+            <input type="submit" value="registreren">
+        </div>
+    </form>
+</body>
+</html>
