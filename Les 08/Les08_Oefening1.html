@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les08 Oefening 1</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body {
+      font-family: "Sofia", sans-serif;
+      color: white;
+        font-size: 50px;
+        }
+    
+        .labelnoord {
+            position: absolute;
+            left: 50%;
+            top: 20px;
+            transform:  translate(0%, -50%);
+        }
+    
+        .labeloost {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform:  translate(-50%, 0);
+        }
+    
+        .labelzuid {
+            position: absolute;
+            left: 50%;
+            bottom: 20px;
+            transform:  translate(0%, 50%);
+        }
+    
+        .labelwest {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform:  translate(50%, 0);
+        }
+    
+        .compass {
+            background: url(kompas.jpg) no-repeat center center fixed;
+            height: 100vh;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="compass"></div>
+    <div class="labelnoord">Noord</div>
+    <div class="labeloost">Oost</div>
+    <div class="labelzuid">Zuid</div>
+    <div class="labelwest">West</div>
+</body>
+</html>

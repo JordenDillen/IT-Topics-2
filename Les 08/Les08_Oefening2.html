@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les08 oefening 02</title>
+    <style>
+    .header {
+        grid-area: hd;
+        background-color: blue;
+        border-radius: 25px;
+    }
+    .footer {
+        grid-area: ft;
+        background-color: orange;
+        border-radius: 25px;
+        
+    }
+    .Main {
+        grid-area: main;
+        background-color: black;
+        border-radius: 25px;
+    }
+    .aside {
+        grid-area: sd;
+        background-color: green;
+        border-radius: 25px;
+    }
+    .wrapper {
+        display: grid;
+        grid-gap: 10px;
+        height: 100vh;
+        width: 100vw;
+        grid-template-columns: 300px 1fr;
+        grid-template-rows: 250px, auto 75px;
+        grid-template-areas:"hd hd" "sd main" "ft ft"
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+
+        <header class="header">Header</header> 
+    
+        <aside class="aside">aside</aside>
+    
+        <main class="Main">Main</main>
+    
+        <footer class="footer">Footer</footer>
+    
+    </div>
+</body>
+</html>
